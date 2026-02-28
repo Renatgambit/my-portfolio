@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме | Усманов Ренат — 1С Разработчик</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/poster_event_1618682.jpg">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Заставка -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Основной контент -->
+    <div id="main-content" class="main-content">
+        
+        <!-- Навигация -->
+        <nav class="navbar">
+            <a href="#" class="navbar-brand">
+                <img src="img/i.jpg" alt="Ренат У." class="nav-profile-pic">
+                <span>Усманов Ренат</span>
+            </a>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Переключить тему">
+                    🌙
+                </button>
+                <div class="menu-toggle" id="menu-toggle">☰</div>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">Обо мне</a></li>
+                <li><a href="#experience" class="nav-link">Опыт</a></li>
+                <li><a href="#skills" class="nav-link">Навыки</a></li>
+                <li><a href="#education" class="nav-link">Образование</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <!-- Герой секция -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="profile-pic-container">                  
+                    <img src="img/i.jpg" alt="Усманов Ренат" class="profile-pic" id="main-profile-pic">
+                </div>
+                <div class="hero-text">
+                    <span class="hero-greeting">Привет, я Ренат 👋</span>
+                    <h1>Разработчик <span style="color: var(--primary-color)">1С</span> &<br>IT-Специалист</h1>
+                    <div class="typing-container">
+                        <span class="typing-text" id="typing-text"></span>
+                    </div>
+                    <div class="cta-group">
+                        <button class="btn btn-primary" id="download-resume">
+                            <span>📄</span> Скачать резюме
+                        </button>
+                        <a href="#contact" class="btn btn-outline">
+                            <span>✉️</span> Связаться
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "Обо мне" -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <h2>Обо мне</h2>
+                <p class="section-subtitle">Сочетаю техническую грамотность с глубоким пониманием бизнес-процессов</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Я студент 3 курса <strong>МАИ</strong> с более чем 3-летним практическим опытом в IT-поддержке. 
+                        Моя карьера началась с решения технических проблем пользователей, что дало мне уникальное понимание того, как технологии влияют на бизнес.
+                    </p>
+                    <p>
+                        Сейчас я активно развиваюсь в направлении <strong>1С:Предприятие</strong>. Моя цель — создавать эффективные решения для автоматизации, которые экономят время и ресурсы компаний. Я не просто пишу код, я ищу оптимальные пути решения задач.
+                    </p>
+                    <p>
+                        <strong>Почему я?</strong> Быстро учусь, умею объяснять сложное простым языком и всегда довожу дело до конца.
+                    </p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Года опыта в IT</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Решенных задач</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Курс МАИ</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Ответственность</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Опыт -->
+        <section id="experience" class="section">
+            <div class="section-header">
+                <h2>Профессиональный опыт</h2>
+                <p class="section-subtitle">Путь от технической поддержки к разработке</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="experience-item">
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <div class="exp-title">
+                                <h3>Помощник IT-специалиста / Младший разработчик 1С</h3>
+                                <div class="exp-company">ТТ Компания</div>
+                            </div>
+                            <div class="exp-period">2021 — Настоящее время</div>
+                        </div>
+                        <div class="exp-desc">
+                            <ul>
+                                <li>Техническая поддержка пользователей (L1/L2): диагностика и решение аппаратных и программных проблем.</li>
+                                <li>Администрирование локальной сети и периферийного оборудования.</li>
+                                <li>Участие в автоматизации бизнес-процессов: доработка печатных форм и отчетов в 1С.</li>
+                                <li>Настройка прав доступа и интеграция нового ПО в инфраструктуру компании.</li>
+                                <li>Сокращение времени простоя оборудования на 15% за счет внедрения превентивных мер.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <div class="exp-title">
+                                <h3>Стажер / Волонтер IT-отдела</h3>
+                                <div class="exp-company">Учебные проекты МАИ</div>
+                            </div>
+                            <div class="exp-period">2022 — 2023</div>
+                        </div>
+                        <div class="exp-desc">
+                            <ul>
+                                <li>Разработка прототипов информационных систем для курсовых работ.</li>
+                                <li>Изучение основ баз данных (SQL) и проектирование схем данных.</li>
+                                <li>Командная работа над проектами по методологии Agile/Scrum.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Навыки -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <h2>Технические навыки</h2>
+                <p class="section-subtitle">Инструменты, которыми я владею</p>
+            </div>
+            
+            <div class="skills-container">
+                <!-- 1C Block -->
+                <div class="skill-category">
+                    <h3>💻 1С:Предприятие</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Конфигуратор / Предприятие</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-width="70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Язык запросов 1С</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-width="60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Отчеты и обработки</span>
+                            <span>55%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-width="55%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- General IT Block -->
+                <div class="skill-category">
+                    <h3>🛠️ IT & Support</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Windows / Linux (Basic)</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Сети (TCP/IP, DNS, DHCP)</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML5 / CSS3 / JS</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-width="65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>SQL (PostgreSQL/MySQL)</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-width="50%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Образование -->
+        <section id="education" class="section">
+            <div class="section-header">
+                <h2>Образование</h2>
+            </div>
+            <div class="edu-card">
+                <div class="uni-logo">МАИ</div>
+                <h3>Московский авиационный институт</h3>
+                <p style="color: var(--primary-color); font-weight: 600; margin: 0.5rem 0;">Факультет информационных технологий</p>
+                <p style="color: var(--text-secondary);">Специальность: Информационная безопасность / Программная инженерия</p>
+                <div style="margin-top: 1.5rem; display: inline-block; background: var(--bg-color); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; color: var(--text-secondary);">
+                    🎓 3 Курс (Бакалавриат) • 2023 — н.в.
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2>Свяжитесь со мной</h2>
+                <p class="section-subtitle">Открыт для предложений о стажировке и работе</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Контактная информация</h3>
+                    <p style="margin-bottom: 2rem; color: var(--text-secondary);">
+                        Я всегда на связи и готов обсудить интересные проекты. Напишите мне в любой удобный мессенджер.
+                    </p>
+                    
+                    <a href="mailto:renatusmanov06@yandex.ru" class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <div style="font-size: 0.8rem; color: var(--text-secondary);">Email</div>
+                            <div>renatusmanov06@yandex.ru</div>
+                        </div>
+                    </a>
+                    
+                    <a href="tel:+79651412118" class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <div style="font-size: 0.8rem; color: var(--text-secondary);">Телефон</div>
+                            <div>+7 (965) 141-21-18</div>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/Recconect17" target="_blank" class="contact-item">
+                        <div class="contact-icon" style="background: #229ED9; color: white;">✈️</div>
+                        <div>
+                            <div style="font-size: 0.8rem; color: var(--text-secondary);">Telegram</div>
+                            <div>@Recconect17</div>
+                        </div>
+                    </a>
+                    
+                    <a href="https://github.com/Renatgambit" target="_blank" class="contact-item">
+                        <div class="contact-icon" style="background: #333; color: white;">🐙</div>
+                        <div>
+                            <div style="font-size: 0.8rem; color: var(--text-secondary);">GitHub</div>
+                            <div>github.com/Renatgambit</div>
+                        </div>
+                    </a>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Ваш Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input" placeholder="Сообщение" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                        Отправить сообщение
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div style="text-align: left;">
+                    <h3 style="margin-bottom: 0.5rem;">Усманов Ренат</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Разработчик 1С | Студент МАИ</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-btn">TG</a>
+                    <a href="#" class="social-btn">VK</a>
+                    <a href="#" class="social-btn">GH</a>
+                </div>
+                <div style="font-size: 0.8rem; color: var(--text-secondary);">
+                    &copy; 2026 Все права защищены.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- UI Elements -->
+    <button class="back-to-top" id="back-to-top" aria-label="Наверх">↑</button>
+    
+    <div class="toast" id="toast">
+        <span style="font-size: 1.2rem;">✅</span>
+        <span id="toast-message">Действие выполнено успешно!</span>
+    </div>
+
+    <script>
+        // ===== 1. SPLASH SCREEN & INIT =====
+        window.addEventListener('load', () => {
+            const splash = document.getElementById('splash-screen');
+            const mainContent = document.getElementById('main-content');
+            
+            setTimeout(() => {
+                splash.classList.add('hidden');
+                mainContent.classList.add('visible');
+                initTypingEffect();
+            }, 1500);
+        });
+
+        // ===== 2. TYPING EFFECT =====
+        function initTypingEffect() {
+            const textElement = document.getElementById('typing-text');
+            const phrases = [
+                "Студент 3 курса МАИ", 
+                "Начинающий 1С Разработчик", 
+                "IT-Специалист с опытом 3 года",
+                "Готов к сложным задачам"
+            ];
+            let phraseIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            let typeSpeed = 100;
+
+            function type() {
+                const currentPhrase = phrases[phraseIndex];
+                
+                if (isDeleting) {
+                    textElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                    charIndex--;
+                    typeSpeed = 50;
+                } else {
+                    textElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                    charIndex++;
+                    typeSpeed = 100;
+                }
+
+                if (!isDeleting && charIndex === currentPhrase.length) {
+                    isDeleting = true;
+                    typeSpeed = 2000; // Pause at end
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    phraseIndex = (phraseIndex + 1) % phrases.length;
+                    typeSpeed = 500;
+                }
+
+                setTimeout(type, typeSpeed);
+            }
+            type();
+        }
+
+        // ===== 3. THEME TOGGLE =====
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+        
+        // Check local storage
+        if (localStorage.getItem('theme') === 'dark') {
+            htmlElement.setAttribute('data-theme', 'dark');
+            themeToggle.textContent = '☀️';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (htmlElement.getAttribute('data-theme') === 'dark') {
+                htmlElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+                themeToggle.textContent = '🌙';
+            } else {
+                htmlElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                themeToggle.textContent = '☀️';
+            }
+        });
+
+        // ===== 4. SCROLL ANIMATIONS (Intersection Observer) =====
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Animate skill bars if inside this section
+                    if (entry.target.id === 'skills') {
+                        const progressBars = entry.target.querySelectorAll('.skill-bar-fill');
+                        progressBars.forEach(bar => {
+                            const width = bar.getAttribute('data-width');
+                            bar.style.width = width;
+                        });
+                    }
+                    
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section, .experience-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // ===== 5. NAVIGATION & SCROLL SPY =====
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section');
+        const menuToggle = document.getElementById('menu-toggle');
+        const navList = document.getElementById('nav-links');
+
+        // Mobile Menu
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            menuToggle.textContent = navList.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Close mobile menu on link click
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('active');
+                menuToggle.textContent = '☰';
+            });
+        });
+
+        // Scroll Spy
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Back to Top Button
+            const backToTop = document.getElementById('back-to-top');
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        document.getElementById('back-to-top').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ===== 6. INTERACTIONS =====
+        
+        // Download Resume Simulation
+        document.getElementById('download-resume').addEventListener('click', () => {
+            showToast('Скачивание резюме началось...');
+            // In a real scenario, this would trigger a file download
+            setTimeout(() => {
+                showToast('Резюме сохранено на устройство!');
+            }, 1500);
+        });
+
+        // Contact Form Handling
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.textContent;
+            
+            btn.textContent = 'Отправка...';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.textContent = 'Отправлено! ✅';
+                btn.style.backgroundColor = '#10b981'; // Green
+                showToast('Сообщение успешно отправлено!');
+                e.target.reset();
+                
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.disabled = false;
+                    btn.style.backgroundColor = '';
+                }, 3000);
+            }, 1500);
+        });
+
+        // Toast Notification Helper
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const msgElement = document.getElementById('toast-message');
+            msgElement.textContent = message;
+            
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // Profile Pic Interaction (Optional fun feature)
+        const profilePic = document.getElementById('main-profile-pic');
+        profilePic.addEventListener('click', () => {
+            profilePic.style.transform = 'scale(0.95) rotate(-5deg)';
+            setTimeout(() => {
+                profilePic.style.transform = 'scale(1) rotate(0deg)';
+            }, 300);
+        });
+
+    </script>
+</body>
+</html>
+
